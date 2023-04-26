@@ -1,21 +1,24 @@
 import React from 'react';
-import Typed from 'react-typed';
+import background from '../assets/hero.jpg'
+import { Link } from 'react-router-dom';
 
 function Hero() {
   return (
-    <div className='text-white bg-black '>
-        <div className='max-w-[800px] mt-[-96px] w-full h-screen mx-auto flex flex-col text-center justify-center'>
-            <p className='text-[#00df9a] font-bold p-2'>GROWING WITH DATA</p>
-            <h1 className='text-4xl font-bold md:text-7xl sm:text-6xl md:py-6'>Grow with data.</h1>
-            <div className='flex items-center justify-center'>
-                <p className='py-4 text-xl font-bold md:text-5xl sm:text-4xl'>Fast, dlexiblevfinancing for</p>
-                <Typed className='pl-2 text-xl font-bold md:text-5xl sm:text-4xl' strings={['BTB','BTC','SASS']} typeSpeed={120} backSpeed={139} loop />
+    // style={{ backgroundImage: `url(${background})` }}
+    <div className='relative z-0 h-screen text-white bg-black bg-center bg-no-repeat bg-cover' style={{ backgroundImage: `url(${background})` }}>
+      <div className="absolute top-0 left-0 w-full h-screen bg-black opacity-50 -z-20"></div>
+      <div className='flex items-center justify-center h-[70vh] text-center'>
+        <div className='text-center'>
+          <h1 className='text-4xl font-semibold'>Wanderlust Planner. Your Ultimate Travel Companion</h1>
+          <p className='mt-4 font-thin text-md'>Plan your dream vacation with ease using Wanderlust Planner,
+            the ultimate travel companion website.</p>
+            <div className='flex justify-between bg-white max-w-[500px] mx-auto text-gray-400 px-4 py-2 mt-4 items-center rounded-md'>
+              <p className='font-thin'>What Whould You Like</p>
+              <Link to='/dashboard'><button className='px-4 py-2 text-white bg-blue-400 border rounded-md hover:bg-transparent hover:border-blue-400 hover:text-blue-400'>Start Planing</button></Link>
             </div>
-            <div className=''>
-                <p className='text-xl font-bold text-gray-500 md:text-2xl'>Monitor your data analytics to increase revenue for BTB,BTC & SAAS platforms..</p>
-            </div>
-            <button className='bg-[#00df9a] w-[200px] rounded-md font-medium my-6 mx-auto text-black py-3 '>Get Started</button>
         </div>
+
+      </div>
     </div>
   )
 }

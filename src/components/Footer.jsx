@@ -9,12 +9,13 @@ import {
 
 function Footer() {
   return (
-    <div className='bg-black'>
-      <div className='text-gray-100 bg-black max-w-[1240px] max-auto py-16 grid lg:grid-cols-3 m-4 mb-0'>
+    <div className='px-4 bg-black'>
+      <div className='text-gray-100 bg-black max-w-[1240px] mx-auto py-16 grid lg:grid-cols-3 mb-0'>
         <div>
-          <h1 className='w-full text-3xl font-bold text-[#00df9a]'>REACT.</h1>
-          <p className='py-4'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam officiis
-            qui eaque ducimus, sit repudiandae quasi minima ratione facere deleniti?
+          <h1 className='w-full text-3xl font-bold text-blue-400'>TRAVEL Planner</h1>
+          <p className='py-4'>At Travel Budget Planner, we believe that travel shouldn't break the bank. 
+          Our website is dedicated to helping travelers create a personalized budget for their trips, 
+          from flights and accommodations to food and activities.
           </p>
           <div className='flex md:[75%] justify-between my-6'>
             <AiFillDribbbleSquare size={30} className='cursor-pointer hover:bg-[#00df9a] duration-75 rounded-md' />
